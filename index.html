@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-group">
+        <h1 id="title">Torneo nuevas tendencias deportivas</h1>
+        <p id="description">Formulario de inscripción street workout & calistenia</p>
+        <form id="survey-form">
+            <div class="group">
+                <label id="name-label">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="ingresa tu nombre" required>
+            </div>
+            <div class="group">
+                <label id="email-label">Correo electronico</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="ingresa tu correo electronico" required>
+            </div>
+            <div class="group">
+                <label id="number-label">Edad</label>
+                <input type="number" name="age" id="number" min="8" max="50" class="form-control" placeholder="ingresa tu edad" required>
+            </div>
+            <div class="group">
+                <label id="id-label">Numero de identificación</label>
+                <input type="number" name="id" id="id" class="form-control" placeholder="ingresa tu identificacion" required>
+            </div>
+            <div class="group">
+                <p>Especificidad de participación</p>
+                <select name="seleccion" id="dropdown" class="form-control" required>
+                    <option disabled selected value>seleccionar</option>
+                    <option value="street workout">Street workout</option>
+                    <option value="lifting">Lifting</option>
+                    <option value="crossfit">crossfit</option>
+                    <option value="lifting lastrado">lifting lastrado</option>
+                </select>
+            </div>
+            <div class="group">
+                <p>seleccione la categoria en la que desea participar</p>
+                <labeL>
+                    <input name="categoria" value="novatos" type="radio" class="radio" checked>
+                    Novatos
+                </labeL>
+                <labeL>
+                    <input name="categoria" value="avanzado" type="radio" class="radio">
+                    Avanzado
+                </labeL>
+                <labeL>
+                    <input name="categoria" value="profesional" type="radio" class="radio">
+                    Profesional
+                </labeL>
+            </div>
+            <div class="group">
+                <label for="team-label">Equipo al que pertenece</label>
+                <input type="text" name="team" id="team" class="form-control" placeholder="ingresa tu equipo">
+            </div>
+            <div class="group">
+                <p>Estilo de camiseta</p>
+                <labeL>
+                    <input name="camiseta" value="con mangas" type="radio" class="radio" checked>
+                    Con mangas
+                </labeL>
+                <labeL>
+                    <input name="camiseta" value="sin mangas" type="radio" class="radio">
+                    Sin mangas
+                </labeL>
+            </div>
+            <div class="group">
+                <p>Talla de camiseta</p>
+                <labeL>
+                    <input name="talla" value="S" type="radio" class="radio" checked>
+                    S
+                </labeL>
+                <labeL>
+                    <input name="talla" value="M" type="radio" class="radio">
+                    M
+                </labeL>
+                <labeL>
+                    <input name="talla" value="L" type="radio" class="radio">
+                    L
+                </labeL>
+                <labeL>
+                    <input name="talla" value="XL" type="radio" class="radio">
+                    XL
+                </labeL>
+            </div>
+            <div class="group">
+                <p>¿Qué le gustaria que fuera el premio?</p>
+                <h3 id="section">Premios para primer, segundo y tercer puesto
+                    (todas las categorias)
+                </h3>
+                <labeL>
+                    <input name="premio" value="trofeos" type="checkbox" class="checkbox">
+                    Trofeos
+                </labeL>
+                <labeL>
+                    <input name="premio" value="medallas" type="checkbox" class="checkbox">
+                    Medallas
+                </labeL>
+                <labeL>
+                    <input name="premio" value="dinero en efectivo" type="checkbox" class="checkbox">
+                    Dinero en efectivo
+                </labeL>
+                <labeL>
+                    <input name="premio" value="regalos de patrocinadores" type="checkbox" class="checkbox">
+                    Regalos de patrocinadores
+                </labeL>
+            </div>
+            <div class="group">
+                <p>Escriba sus recomendaciones para el torneo</p>
+                <textarea name="recomendaciones" id="recomendaciones" class="textarea" placeholder="recomendaciones"></textarea>
+            </div>
+            <div class="group">
+                <button type="submit" id="submit" class="button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
